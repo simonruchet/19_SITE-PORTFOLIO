@@ -2,9 +2,9 @@
 @import "font";
 @import "base";
 @import "layout";
-@import "modules/projectsphoto";
-@import "modules/projectsmusic";
-@import "modules/projectsvideo";
+@import "modules/project-photo";
+@import "modules/project-music";
+@import "modules/project-video";
 @import "modules/header";
 
 .row + .row {
