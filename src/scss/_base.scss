@@ -46,11 +46,10 @@ video {
 // Heavy condensed italic
 
 @font-face {
-  font-family: "Trade Gothic Condensed";
+  font-family: "Trade Gothic Condensed Italic";
   src: url("../font/TradeGothicNextLTPro-HvCnIt.woff2") format("woff2"),
     url("../font/TradeGothicNextLTPro-HvCnIt.woff") format("woff");
   font-weight: 800;
-  font-style: italic;
 }
 
 // Bold
@@ -75,7 +74,7 @@ video {
 
 body {
   text-transform: uppercase;
-  font-family: "Trade Gothic";
+  font-family: "Trade Gothic", sans-serif;
   font-weight: 700;
 }
 

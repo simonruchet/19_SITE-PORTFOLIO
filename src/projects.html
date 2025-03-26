@@ -7,18 +7,12 @@
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
-    <a href="index.html">Accueil</a>
-    <a href="projects.html">Projets</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <h1>Projets</h1>
+    <extends src="header.html"></extends>
     <div class="project-photo">
-      <a href="detail-photo-1.html">
-        <extends
-          src="project.html"
-          locals='{"title":"Ailleurs", "cat":"Photo", "img":"photo/ailleurs/ailleurs-minia.jpg"}'
-        ></extends>
-      </a>
+      <extends
+        src="project.html"
+        locals='{"cat":"Photo", "link":"detail-photo-1.html", "title":"Ailleurs",  "img":"photo/ailleurs/ailleurs-minia.jpg"}'
+      ></extends>
     </div>
 
     <!-- <div class="project-music">
