@@ -1,3 +1,9 @@
 .project-video {
-  background-color: brown;
+  margin-bottom: 120px;
+  .project-image {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    border: 30px solid #000;
+  }
 }

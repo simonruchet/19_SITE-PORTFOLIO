@@ -1,6 +1,13 @@
-.project-photo .project-image {
-  height: 404px;
-  width: 100%;
-  object-fit: cover;
-  border: 30px solid #000;
+.project-photo {
+  margin-bottom: 120px;
+  .project-image {
+    height: 404px;
+    width: 100%;
+    object-fit: cover;
+    border: 30px solid #000;
+  }
+
+  .project-title {
+    margin-top: 32px;
+  }
 }
