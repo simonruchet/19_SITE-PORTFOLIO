@@ -1,3 +1,26 @@
 .project-music {
-  background-color: bisque;
+  color: white;
+  background-color: black;
+  padding-bottom: 20px;
+
+  .project-image {
+    height: 443px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .project-title {
+    text-align: right;
+    position: absolute;
+    top: 72px;
+    right: 42px;
+  }
+
+  .project-link {
+    position: relative;
+  }
+
+  .project-category {
+    margin-bottom: -20px;
+  }
 }
