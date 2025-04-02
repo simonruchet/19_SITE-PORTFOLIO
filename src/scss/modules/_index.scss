@@ -1,0 +1,23 @@
+.index-header {
+  color: white;
+
+  .index-video {
+    position: relative;
+  }
+
+  .index-video video {
+    position: absolute;
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 70%;
+  }
+
+  .index-header-text {
+    position: relative;
+  }
+}
+
+.index-footer {
+  margin-top: 500px;
+}

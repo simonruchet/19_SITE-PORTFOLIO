@@ -7,9 +7,22 @@
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
-    <extends src="header.html"></extends>
-
-    <extends src="footer.html"></extends>
+    <div class="index">
+      <div class="index-header">
+        <div class="index-video">
+          <video autoplay loop muted playsinline>
+            <source src="img/homepage/visage-home.mp4" type="video/mp4" />
+            Votre navigateur ne supporte pas les vidéos.
+          </video>
+        </div>
+        <div class="index-header-text">
+          <extends src="header.html"></extends>
+        </div>
+      </div>
+      <div class="index-footer">
+        <extends src="footer.html"></extends>
+      </div>
+    </div>
 
     <script src="js/main.js" type="module"></script>
   </body>
