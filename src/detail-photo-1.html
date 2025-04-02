@@ -7,11 +7,62 @@
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
-    <a href="index.html">Accueil</a>
-    <a href="projects.html">Projets</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <p>Détail du projet photo 1</p>
+    <extends src="header.html"></extends>
+    <div class="detail-photo">
+      <extends
+        src="detail-title.html"
+        locals='{"cat":"Série de photos narratives", "title":"Ailleurs"}'
+      ></extends>
+    </div>
+
+    <div class="detail-photo-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 offset-5">
+            <img src="img/projects/photo/ailleurs/ailleurs-minia.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <extends src="cordon.html"></extends>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 offset-2">
+            <img src="img/projects/photo/ailleurs/ailleurs-ombre.jpg" alt="" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-11 offset-1">
+            <div class="detail-photo-1-quote">
+              **** AVAIT ENVIE D’ALLER AILLEURS.
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 offset-5">
+            <img src="img/projects/photo/ailleurs/ailleurs-marche.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <extends src="cordon.html"></extends>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 offset-3">
+            <img src="img/projects/photo/ailleurs/ailleurs-balcon.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-5 offset-7">
+            <div class="detail-infos">
+              .novembre 2023
+              <p>.Photographie numérique</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <extends src="footer.html"></extends>
+
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
