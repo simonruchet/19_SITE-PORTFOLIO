@@ -1,0 +1,13 @@
+.button-back-to-projects {
+  position: sticky;
+  top: calc(100% - 400px);
+  background-image: url(../img/SVG/puce-back-to-projects.svg);
+  background-size: 175px;
+  background-repeat: no-repeat;
+  padding: 12px 39px;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 95%;
+  color: white;
+  display: inline-block;
+}

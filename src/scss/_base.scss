@@ -12,6 +12,9 @@ img,
 video {
   display: block;
   max-width: 100%;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 // Heavy
