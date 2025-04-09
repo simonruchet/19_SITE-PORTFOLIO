@@ -7,11 +7,53 @@
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
-    <a href="index.html">Accueil</a>
-    <a href="projects.html">Projets</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <p>Détail du projet musique 1</p>
+    <extends src="header.html"></extends>
+    <div class="detail-music">
+      <extends
+        src="detail-title.html"
+        locals='{"cat":"création sonore et musicale ", "title":"Orion"}'
+      ></extends>
+    </div>
+    <div class="detail-music-1">
+      <extends src="button-back-to-projects.html"></extends>
+      <div class="l-background-detail-music">
+        <div class="container">
+          <div class="row">
+            <div class="col-10 offset-2">
+              <img
+                src="img/projects/son/cover-portfolio-1.jpg"
+                alt="image accompagnant la musique"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10 offset-2">
+              <iframe
+                width="100%"
+                height="166"
+                scrolling="no"
+                frameborder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2074410108&amp;{ ADD YOUR PARAMETERS HERE }"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail-infos">
+        <div class="container">
+          <div class="row">
+            <div class="col-5 offset-7">
+              .JANVIER 2025 <br />
+              .COMPOSITION ORIGINALE
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <extends src="footer.html"></extends>
+
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
