@@ -22,8 +22,12 @@
   line-height: 90%;
   margin-bottom: 19px;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   gap: 20px;
+  &.is-active .header-projects-svg {
+    display: block;
+  }
 }
 
 .header-about {
@@ -33,6 +37,13 @@
   font-weight: 700;
   line-height: 90%;
   margin-bottom: 19px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  &.is-active .header-about-svg {
+    display: block;
+  }
 }
 
 .header-contact {
@@ -41,12 +52,23 @@
   font-size: 64px;
   font-weight: 700;
   line-height: 90%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  &.is-active .header-contact-svg {
+    display: block;
+  }
 }
 
-.header-svg {
-  opacity: 0;
+.header-projects-svg {
+  display: none;
 }
 
-.header-svg.is-open {
-  opacity: 1;
+.header-about-svg {
+  display: none;
+}
+
+.header-contact-svg {
+  display: none;
 }
