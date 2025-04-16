@@ -1,0 +1,61 @@
+.contact-formulaire {
+  margin-bottom: 100px;
+
+  .contact-title {
+    font-family: "Trade Gothic Condensed Italic";
+    font-size: 48px;
+    margin-bottom: 60px;
+  }
+
+  input {
+    padding: 10px;
+    font-family: "Trade Gothic";
+    text-transform: uppercase;
+    border-radius: 0px;
+    border: 3px solid #000;
+    margin-bottom: 40px;
+  }
+
+  .contact-name input {
+    margin-right: 30px;
+  }
+  .contact-email input {
+    width: 100%;
+  }
+
+  textarea {
+    resize: none;
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    font-family: "Trade Gothic";
+    text-transform: uppercase;
+    border: 3px solid #000;
+  }
+  input:focus-within {
+    outline: none;
+    border-color: #001cab;
+  }
+  textarea:focus-within {
+    outline: none;
+    border-color: #001cab;
+  }
+
+  button {
+    background-color: #000;
+    color: white;
+    font-family: "Trade Gothic";
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 15px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  button:hover {
+    background-color: #001cab;
+  }
+}

@@ -7,11 +7,71 @@
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
-    <a href="index.html">Accueil</a>
-    <a href="projects.html">Projets</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <p>Contactez-moi !</p>
+    <extends src="header.html"></extends>
+    <div class="contact-formulaire">
+      <div class="container">
+        <div class="contact-title">
+          <div class="row">
+            <div class="col-5 offset-2">Contactez-moi</div>
+          </div>
+        </div>
+        <form action="https://formspree.io/f/xrbpdwgz" method="POST">
+          <div class="contact-name">
+            <div class="row">
+              <div class="col-5 offset-2">
+                <input
+                  type="text"
+                  name="first"
+                  placeholder="First Name"
+                  autocomplete="off"
+                  required
+                />
+                <input
+                  type="text"
+                  name="last"
+                  placeholder="Last Name"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="contact-email">
+            <div class="row">
+              <div class="col-5 offset-2">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Adress"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5 offset-2">
+              <textarea
+                rows="5"
+                cols="60"
+                name="message"
+                placeholder="Enter text"
+                autocomplete="off"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="contact-button">
+            <div class="row">
+              <div class="col-2 offset-5">
+                <button type="submit">Send Message</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <extends src="footer.html"></extends>
     <script src="js/main.js" type="module"></script>
   </body>
 </html>

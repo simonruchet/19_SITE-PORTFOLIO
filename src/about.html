@@ -7,11 +7,29 @@
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
-    <a href="index.html">Accueil</a>
-    <a href="projects.html">Projets</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <p>Je m'appelle Simon</p>
+    <extends src="header.html"></extends>
+    <div class="l-about">
+      <div class="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <img src="img/about-profil.png" alt="" />
+            </div>
+
+            <div class="col-6">
+              <div class="about-text">
+                Je m’appelle Simon Ruchet et je fais de la photo, de la vidéo et
+                de la musique. Parfois je lie toutes ces pratiques
+                complémentaires les unes des autres pour des projets entier qui
+                me ressemblent.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <extends src="footer.html"></extends>
     <script src="js/main.js" type="module"></script>
   </body>
 </html>

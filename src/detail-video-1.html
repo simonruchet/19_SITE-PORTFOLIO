@@ -7,11 +7,43 @@
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
-    <a href="index.html">Accueil</a>
-    <a href="projects.html">Projets</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <p>Détail du projet video 1</p>
+    <extends src="header.html"></extends>
+    <div class="detail-video">
+      <extends
+        src="detail-title.html"
+        locals='{"cat":"CLIP VIDéO FICTIF SUR UN MORCEAU DE TUERIE - 27 CèDRES", "title":"Clip"}'
+      ></extends>
+    </div>
+    <div class="detail-video-1">
+      <extends src="button-back-to-projects.html"></extends>
+      <div class="container">
+        <div class="row">
+          <div class="col-10 offset-2">
+            <video controls>
+              <source
+                src="img/projects/video/tuerie-27cedres-compress.m4v"
+                type="video/mp4"
+              />
+              Votre navigateur ne prend pas en charge la balise vidéo.
+            </video>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5 offset-7">
+            <div class="detail-infos">
+              .OCTOBRE 2024 <br />
+              .CLIP VIDéO <br />
+              .MONTAGE / COLORIMéTRIE / TITRAGES <br />
+              <div class="detail-infos-name">
+                En collaboration avec Jade Gomez et Steven Gfeller
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <extends src="footer.html"></extends>
+    </div>
+
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
