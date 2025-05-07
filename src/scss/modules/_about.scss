@@ -11,5 +11,20 @@
 }
 
 .about img {
-  margin-bottom: 150px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  border: 28px solid #fff;
+}
+
+.about-text-little {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.about-text-little a {
+  text-decoration-line: underline;
+
+  text-decoration-thickness: 20%;
+  text-underline-offset: 25%;
 }
