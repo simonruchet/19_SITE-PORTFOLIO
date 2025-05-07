@@ -11,7 +11,7 @@
   line-height: 99%;
   :hover {
     color: #000000;
-    animation: glitch 0.05s steps(2, end) infinite;
+    animation: glitch 0.1s steps(2, end) infinite;
   }
 
   @keyframes glitch {
