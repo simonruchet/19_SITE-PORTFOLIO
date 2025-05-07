@@ -10,5 +10,57 @@
   line-height: 95%;
   color: white;
   display: inline-block;
-  mix-blend-mode: hard-light;
+  transition: filter 0.5s ease;
+}
+
+.button-back-to-projects:hover {
+  animation: shake-rotate 0.3s linear;
+}
+
+@keyframes shake-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(-8deg);
+  }
+  10% {
+    transform: rotate(8deg);
+  }
+  15% {
+    transform: rotate(-5deg);
+  }
+  20% {
+    transform: rotate(5deg);
+  }
+  25% {
+    transform: rotate(-6deg);
+  }
+  30% {
+    transform: rotate(6deg);
+  }
+  35% {
+    transform: rotate(-7deg);
+  }
+  40% {
+    transform: rotate(7deg);
+  }
+  45% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(1deg);
+  }
+  90% {
+    transform: rotate(0.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

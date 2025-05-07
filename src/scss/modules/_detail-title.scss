@@ -3,6 +3,23 @@
   font-size: 180px;
   font-weight: 800;
   line-height: 90%;
+  display: inline-block;
+  animation: glitchTitle 0.1s steps(2, end) infinite;
+}
+
+@keyframes glitchTitle {
+  0% {
+    transform: translateX(0);
+    color: rgb(29, 29, 29);
+  }
+  50% {
+    transform: translateX(0.7px);
+    color: #000000;
+  }
+  100% {
+    transform: translateX(-0.7px);
+    color: rgb(15, 15, 15);
+  }
 }
 
 .detail-category {

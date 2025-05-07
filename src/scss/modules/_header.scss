@@ -8,6 +8,24 @@
   font-style: normal;
   font-weight: 800;
   line-height: 95%;
+  position: relative;
+
+  :hover {
+    color: #000000;
+    animation: glitch 0.1s steps(2, end) infinite;
+  }
+
+  @keyframes glitch {
+    0% {
+      text-shadow: 2px 0 rgb(0, 0, 0), -2px 0 #0400ff;
+    }
+    50% {
+      text-shadow: -2px 0 rgb(0, 0, 0), 2px 0 #0400ff;
+    }
+    100% {
+      text-shadow: 2px 0 rgb(0, 0, 0), -2px 0 #0400ff;
+    }
+  }
 }
 
 .header a {
