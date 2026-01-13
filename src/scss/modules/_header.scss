@@ -124,3 +124,35 @@
 .header-contact-svg {
   display: none;
 }
+
+// MOBILE
+
+/* Overlay par défaut caché */
+.mobile-overlay {
+  display: none; /* cacher par défaut */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000; /* écran noir */
+  color: #fff; /* texte blanc */
+  z-index: 9999; /* au-dessus de tout le site */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.mobile-overlay-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 80%;
+}
+
+/* Quand l'écran est petit (mobile / tablette) */
+@media (max-width: 1024px) {
+  .mobile-overlay {
+    display: flex; /* affiche seulement sur mobile */
+  }
+}
