@@ -5,10 +5,11 @@
 }
 
 .footer-logo {
-  font-size: 20px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 800;
   line-height: 99%;
+  letter-spacing: 1.5px;
   :hover {
     color: #000000;
     animation: glitch 0.1s steps(2, end) infinite;
@@ -40,5 +41,5 @@
   line-height: 90%;
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 18px;
 }
