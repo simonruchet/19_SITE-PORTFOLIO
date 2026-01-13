@@ -1,12 +1,24 @@
 .header {
-  padding-top: 40px;
+  padding-top: 50px;
   margin-bottom: 100px;
 }
 
-.header-logo {
-  font-size: 32px;
-  font-style: normal;
+.header-nav {
+  margin-top: 15%;
+}
+
+.header-name {
+  font-size: 70px;
   font-weight: 800;
+  line-height: 101.483%;
+  letter-spacing: 4.9px;
+  margin-bottom: 10%;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 95%;
   position: relative;
 
@@ -32,10 +44,28 @@
   text-decoration: none;
 }
 
+.header-experience {
+  font-family: "Trade Gothic Compressed";
+  text-align: right;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 90%;
+  letter-spacing: 6px;
+  margin-bottom: 19px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10%;
+  &.is-active .header-experience-svg {
+    display: block;
+  }
+}
+
 .header-projects {
   font-family: "Trade Gothic Compressed";
   text-align: right;
-  font-size: 100px;
+  font-size: 64px;
   font-weight: 700;
   line-height: 90%;
   margin-bottom: 19px;
@@ -77,6 +107,10 @@
   &.is-active .header-contact-svg {
     display: block;
   }
+}
+
+.header-experience-svg {
+  display: none;
 }
 
 .header-projects-svg {

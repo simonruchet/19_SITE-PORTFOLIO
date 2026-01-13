@@ -1,20 +1,58 @@
+// .index-header {
+//   color: white;
+//   margin-bottom: 500px;
+
+//   .index-video {
+//     position: relative;
+//   }
+
+//   .index-video video {
+//     position: absolute;
+//     height: 700px;
+//     width: 100%;
+//     object-fit: cover;
+//     object-position: 0% 70%;
+//   }
+
+//   .index-header-text {
+//     position: relative;
+//   }
+// }
+
 .index-header {
+  position: relative; /* 👈 référence pour le texte */
   color: white;
+  height: 100vh; /* pleine hauteur écran */
+  overflow: hidden;
   margin-bottom: 500px;
+}
 
-  .index-video {
-    position: relative;
-  }
+/* Conteneur vidéo */
+.index-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
-  .index-video video {
-    position: absolute;
-    height: 700px;
-    width: 100%;
-    object-fit: cover;
-    object-position: 0% 70%;
-  }
+/* Vidéo normale, pas de zoom */
+.index-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0% 70%;
+}
 
-  .index-header-text {
-    position: relative;
-  }
+/* TEXTE AU-DESSUS DE LA VIDÉO */
+.index-header-text {
+  position: absolute; /* superposé */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
