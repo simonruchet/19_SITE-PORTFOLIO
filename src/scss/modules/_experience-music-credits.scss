@@ -1,0 +1,56 @@
+.experience-music-credits h2 {
+  font-size: 27px;
+  font-weight: 800;
+  line-height: 101.483%;
+  margin-top: 110px;
+}
+
+.experience-music-credits p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 101.483%;
+  text-transform: none;
+  margin-top: 22px;
+}
+
+.experience-music-share {
+  display: inline-flex;
+  padding: 15px 17px;
+  color: white;
+  background-color: black;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 101.483%;
+  margin-top: 110px;
+  transition: all 0.3s ease;
+  border: 5px solid transparent;
+  box-sizing: border-box;
+
+  img {
+    width: 20px;
+    margin-top: 4px;
+  }
+}
+
+.experience-music-share a,
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.experience-music-share img {
+  transition: all 0.3s ease;
+}
+
+.experience-music-share:hover {
+  color: black;
+  background-color: white;
+  border-color: #000;
+}
+
+.experience-music-share:hover img {
+  filter: invert(1);
+}
