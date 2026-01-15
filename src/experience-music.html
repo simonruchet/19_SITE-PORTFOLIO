@@ -1,18 +1,42 @@
-<div class="container">
-  <div class="experience-music-inner">
-    <div class="row">
-      <div class="col-4">
-        <!-- <a class="experience-music-link" href="{{ link }}"> -->
-        <img
-          src="img/experience/music/{{ img }}"
-          class="experience-music-image"
-        />
-        <!-- </a> -->
-      </div>
-      <div class="col-8">
-        <h2 class="experience-music-title">{{ title }}</h2>
-        <h3 class="experience-music-artists">{{ artists }}</h3>
+<body>
+  <div class="container">
+    <div class="experience-music-inner">
+      <div class="row">
+        <div class="col-4">
+          <img
+            src="img/experience/music/{{ img }}"
+            class="experience-music-image"
+          />
+        </div>
+        <div class="col-8">
+          <h2 class="experience-music-title">{{ title }}</h2>
+          <h3 class="experience-music-artists">{{ artists }}</h3>
+          <div class="experience-player">
+            <img
+              id="play-icon"
+              src="img/SVG/player-white.svg"
+              class="player-icon"
+              draggable="false"
+            />
+
+            <img
+              id="pause-icon"
+              src="img/SVG/player-white-2.svg"
+              class="player-icon hide"
+              draggable="false"
+            />
+
+            <input type="range" id="seek-bar" value="0" min="0" max="100" />
+            <span id="time-display">00:00</span>
+
+            <audio id="audio">
+              <source src="music/hiver-test.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+  <script src="js/experience-music.js"></script>
+</body>

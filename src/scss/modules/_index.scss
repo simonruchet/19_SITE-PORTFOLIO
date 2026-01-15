@@ -20,14 +20,12 @@
 // }
 
 .index-header {
-  position: relative; /* 👈 référence pour le texte */
+  position: relative;
   color: white;
-  height: 100vh; /* pleine hauteur écran */
+  height: 100vh;
   overflow: hidden;
-  margin-bottom: 500px;
 }
 
-/* Conteneur vidéo */
 .index-video {
   position: absolute;
   top: 0;
@@ -36,7 +34,6 @@
   height: 100%;
 }
 
-/* Vidéo normale, pas de zoom */
 .index-video video {
   position: absolute;
   top: 0;
@@ -47,9 +44,8 @@
   object-position: 0% 70%;
 }
 
-/* TEXTE AU-DESSUS DE LA VIDÉO */
 .index-header-text {
-  position: absolute; /* superposé */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
