@@ -151,7 +151,7 @@
 }
 
 /* Quand l'écran est petit (mobile / tablette) */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .mobile-overlay {
     display: flex; /* affiche seulement sur mobile */
   }

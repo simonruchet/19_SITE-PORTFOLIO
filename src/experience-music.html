@@ -1,4 +1,4 @@
-<body>
+<!-- <body>
   <div class="container">
     <div class="experience-music-inner">
       <div class="row">
@@ -30,7 +30,7 @@
             <span id="time-display">00:00</span>
 
             <audio id="audio">
-              <source src="music/hiver-test.mp3" type="audio/mpeg" />
+              <source src="music/{{ audio }}" type="audio/mpeg" />
             </audio>
           </div>
         </div>
@@ -39,4 +39,55 @@
   </div>
 
   <script src="js/experience-music.js"></script>
-</body>
+</body> -->
+
+<div class="container">
+  <div class="experience-music-inner">
+    <div class="row">
+      <!-- IMAGE -->
+      <div class="col-4">
+        <img
+          src="img/experience/music/{{ img }}"
+          class="experience-music-image"
+          alt="{{ title }}"
+        />
+      </div>
+
+      <!-- INFOS + PLAYER -->
+      <div class="col-8">
+        <h2 class="experience-music-title">{{ title }}</h2>
+        <h3 class="experience-music-artists">{{ artists }}</h3>
+
+        <div class="experience-player">
+          <!-- PLAY -->
+          <img
+            class="player-icon play-icon"
+            src="img/SVG/player-white.svg"
+            draggable="false"
+            alt="Play"
+          />
+
+          <!-- PAUSE -->
+          <img
+            class="player-icon pause-icon hide"
+            src="img/SVG/player-white-2.svg"
+            draggable="false"
+            alt="Pause"
+          />
+
+          <!-- SEEK BAR -->
+          <input class="seek-bar" type="range" value="0" min="0" max="100" />
+
+          <!-- TIME -->
+          <span class="time-display">00:00</span>
+
+          <!-- AUDIO -->
+          <audio class="audio" preload="metadata">
+            <source src="music/{{ audio }}" type="audio/mpeg" />
+            Votre navigateur ne supporte pas l’audio.
+          </audio>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
