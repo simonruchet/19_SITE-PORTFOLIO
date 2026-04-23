@@ -1,19 +1,21 @@
 <div class="container">
-  <div class="project-music-inner">
+  <div class="project-music">
     <div class="row">
-      <div class="col-9 offset-3">
+      <div class="col-10">
+        <a href="{{ link }}"> <h2 class="project-title">{{ title }}</h2></a>
+      </div>
+      <div class="col-9">
         <div class="project-category">
-          <img src="img/SVG/puce-white.svg" alt="" />
+          <img src="img/SVG/puce.svg" alt="" />
           {{ cat }}
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
-        <a class="project-link" href="{{ link }}">
-          <img src="img/projects/{{ img }}" class="project-image" />
-          <h2 class="project-title">{{ title }}</h2></a
-        >
+        <a href="{{ link }}">
+          <img src="img/projects/{{ img }}" class="project-image"
+        /></a>
       </div>
     </div>
   </div>

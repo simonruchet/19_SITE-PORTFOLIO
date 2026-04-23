@@ -1,27 +1,14 @@
 .project-music {
-  color: white;
-  background-color: black;
-  padding-bottom: 40px;
-  margin-bottom: 120px;
-
+  margin-bottom: 130px;
+  margin-top: 50px;
   .project-image {
-    height: 443px;
+    height: 450px;
     width: 100%;
     object-fit: cover;
+    border: 20px solid #000000;
   }
-
-  .project-title {
-    text-align: right;
-    position: absolute;
-    top: 72px;
-    right: 42px;
-  }
-
-  .project-link {
-    position: relative;
-  }
-
   .project-category {
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
