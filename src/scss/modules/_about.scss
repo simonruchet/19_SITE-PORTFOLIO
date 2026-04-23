@@ -5,9 +5,11 @@
 
 .about-text {
   font-family: "Trade Gothic", sans-serif;
-  font-size: 40px;
+  font-size: 20px;
   margin-top: 120px;
   color: white;
+  text-transform: none;
+  line-height: 150%;
 }
 
 .about img {
@@ -27,4 +29,10 @@
 
   text-decoration-thickness: 20%;
   text-underline-offset: 25%;
+}
+
+.about-photos {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
 }

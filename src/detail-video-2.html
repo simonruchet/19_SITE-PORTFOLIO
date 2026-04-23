@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>eikon parcel starter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/main.scss" />
+  </head>
+  <body>
+    <extends
+      src="header.html"
+      locals='{"experienceClass":"", "projectsClass":"", "aboutClass":"", "contactClass":""}'
+    ></extends>
+
+    <div class="detail-video">
+      <extends
+        src="detail-title.html"
+        locals='{
+          "cat":"This experiment is a mix of 2D and 3D, made mostly using Cavalry. The music is Big Beans by Boris Blank. I changed the track structure to fit the video vibe better. Do not forget to look at the stars.", 
+          "title":"LOOK at the stars"
+        }'
+      ></extends>
+    </div>
+
+    <div class="detail-video-1">
+      <extends src="button-back-to-projects.html"></extends>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-10 offset-2">
+            <div class="ratio ratio-16x9">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/peRkPO_h_50?si=6qgPsbEjqbr07rDR"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-5 offset-7">
+            <div class="detail-infos">
+              .January 2026 <br />
+              .VIDEO CLIP
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <extends src="footer.html"></extends>
+    </div>
+
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
