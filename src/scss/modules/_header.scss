@@ -125,11 +125,11 @@
   display: none;
 }
 
-// MOBILE
+/* --- STYLES GÉNÉRAUX --- */
 
-/* Overlay par défaut caché */
+/* L'overlay est caché par défaut sur les ordinateurs */
 .mobile-overlay {
-  display: none; /* cacher par défaut */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -137,11 +137,17 @@
   height: 100%;
   background-color: #000; /* écran noir */
   color: #fff; /* texte blanc */
-  z-index: 9999; /* au-dessus de tout le site */
+  z-index: 9999; /* au-dessus de tout le reste */
+
+  /* Centrage du contenu */
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 20px;
+
+  /* Sécurité si le texte est trop long sur petit écran */
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 
 .mobile-overlay-text {
@@ -150,9 +156,17 @@
   max-width: 80%;
 }
 
-/* Quand l'écran est petit (mobile / tablette) */
-@media (max-width: 768px) {
+/* --- ADAPTATION MOBILE / TABLETTE (< 1024px) --- */
+
+@media (max-width: 1024px) {
+  /* On bloque le scroll de la page principale */
+  body {
+    overflow: hidden;
+    height: 100vh; /* Verrouille la hauteur pour éviter les rebonds sur mobile */
+  }
+
+  /* On affiche l'overlay */
   .mobile-overlay {
-    display: flex; /* affiche seulement sur mobile */
+    display: flex;
   }
 }

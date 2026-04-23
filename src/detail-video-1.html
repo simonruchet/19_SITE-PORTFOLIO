@@ -11,39 +11,48 @@
       src="header.html"
       locals='{"experienceClass":"", "projectsClass":"", "aboutClass":"", "contactClass":""}'
     ></extends>
+
     <div class="detail-video">
       <extends
         src="detail-title.html"
-        locals='{"cat":"CLIP VIDéO FICTIF SUR UN MORCEAU DE TUERIE - 27 CèDRES", "title":"Clip"}'
+        locals='{
+          "cat":"Created as my final graduation project, this music video explores the social norms imposed on women. To reflect a narrative of rebellion, I developed a raw aesthetic where gritty visuals meet provocative sound design.", 
+          "title":"K Flint"
+        }'
       ></extends>
     </div>
+
     <div class="detail-video-1">
       <extends src="button-back-to-projects.html"></extends>
+
       <div class="container">
         <div class="row">
           <div class="col-10 offset-2">
-            <video controls>
-              <source
-                src="img/projects/video/tuerie-27cedres-compress.mp4"
-                type="video/mp4"
-              />
-              Votre navigateur ne prend pas en charge la balise vidéo.
-            </video>
+            <div class="ratio ratio-16x9">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/qGoeESLl0-s?si=GkwWFRa_brY7x-9h"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </div>
+
         <div class="row">
           <div class="col-5 offset-7">
             <div class="detail-infos">
-              .OCTOBRE 2024 <br />
-              .CLIP VIDéO <br />
-              .MONTAGE / COLORIMéTRIE / TITRAGES <br />
-              <div class="detail-infos-name">
-                En collaboration avec Jade Gomez et Steven Gfeller
-              </div>
+              .may 2026 <br />
+              .VIDEO CLIP
             </div>
           </div>
         </div>
       </div>
+
       <extends src="footer.html"></extends>
     </div>
 
