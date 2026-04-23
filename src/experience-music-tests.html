@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="experience-music-tests-inner">
+    <div class="row">
+      <div class="col-3 offset-2">
+        <img
+          src="img/experience/music/{{ img }}"
+          class="experience-music-tests-image"
+          alt="{{ title }}"
+        />
+      </div>
+
+      <div class="col-6">
+        <h2 class="experience-music-tests-title">{{ title }}</h2>
+        <h3 class="experience-music-tests-artists">{{ artists }}</h3>
+
+        <div class="experience-player">
+          <img
+            class="player-icon play-icon"
+            src="img/SVG/player-white.svg"
+            draggable="false"
+            alt="Play"
+          />
+
+          <img
+            class="player-icon pause-icon hide"
+            src="img/SVG/player-white-2.svg"
+            draggable="false"
+            alt="Pause"
+          />
+
+          <input class="seek-bar" type="range" value="0" min="0" max="100" />
+
+          <span class="time-display">00:00</span>
+
+          <audio class="audio" preload="metadata">
+            <source src="music/{{ audio }}" type="audio/mpeg" />
+            Votre navigateur ne supporte pas l’audio.
+          </audio>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+.experience-music-credits-tests {
+  h2 {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 101.483%;
+    margin-top: -10%; // Priorité à la valeur en % si elle écrase le 110px
+  }
+
+  p {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 101.483%;
+    text-transform: none;
+    margin-top: 9px;
+  }
+
+  h3 {
+    margin-top: 3%;
+  }
+}
