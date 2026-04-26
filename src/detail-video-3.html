@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>SEUL | VEG4</title>
+    <meta
+      name="description"
+      content="A collaborative short film where I handled on-set sound recording, sound design, and original music to create the movie's unique atmosphere."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="scss/main.scss" />
+  </head>
+  <body>
+    <extends
+      src="header.html"
+      locals='{"experienceClass":"", "projectsClass":"", "aboutClass":"", "contactClass":""}'
+    ></extends>
+
+    <div class="detail-video">
+      <extends
+        src="detail-title.html"
+        locals='{
+          "cat":"This short film was a collaboration between Andrea Iacoviello, Maxime Cordy, Jade Gomez and myself. I handled the sound recording on set, plus all the sound design, the music and the overall atmosphere of the movie.", 
+          "title":"Seul"
+        }'
+      ></extends>
+    </div>
+
+    <div class="detail-video-1">
+      <extends src="button-back-to-projects.html"></extends>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-10 offset-2">
+            <div class="ratio ratio-16x9">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/GuZy8VUo7Ws?si=v4C4tL6icvjrs8vC"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-5 offset-7">
+            <div class="detail-infos">
+              .May 2025 <br />
+              .SHORT FILM
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <extends src="footer.html"></extends>
+    </div>
+
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
