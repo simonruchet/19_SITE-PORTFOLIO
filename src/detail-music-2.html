@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>FLOR4L | VEG4</title>
+    <meta
+      name="description"
+      content="An immersive soundscape designed for the Tutti Fiori exhibition, blending organic textures and intentional silence to create a unique atmospheric environment."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="scss/main.scss" />
+  </head>
+  <body>
+    <extends
+      src="header.html"
+      locals='{"experienceClass":"", "projectsClass":"is-active", "aboutClass":"", "contactClass":""}'
+    ></extends>
+
+    <div class="detail-music">
+      <extends
+        src="detail-title.html"
+        locals='{
+          "cat":"FLOR4L is an immersive sonic environment composed for the Tutti Fiori painting exhibition by Isa in Fribourg Switzerland. This project explores the synergy between visual art and sound through a blend of organic textures, field recordings, and intentional silence. Moving beyond traditional music, the composition creates a meditative atmosphere designed to enhance the gallery space and accompany the visitor through the artistic experience.", 
+          "title":"FLOR4L"
+        }'
+      ></extends>
+    </div>
+
+    <div class="detail-music-2">
+      <extends src="button-back-to-projects.html"></extends>
+
+      <!-- flor4l -->
+      <div class="container">
+        <div class="col-10 offset-2">
+          <div class="floral">
+            <iframe
+              style="border: 0; width: 700px; height: 373px"
+              src="https://bandcamp.com/EmbeddedPlayer/album=1224313422/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/"
+              seamless
+              ><a href="https://veg4.bandcamp.com/album/flor4l"
+                >FLOR4L by VEG4</a
+              ></iframe
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- flor4l -->
+
+      <extends src="footer.html"></extends>
+    </div>
+
+    <script src="js/experience-music.js" type="module"></script>
+  </body>
+</html>

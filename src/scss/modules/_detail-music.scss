@@ -24,3 +24,14 @@
     font-weight: 800;
   }
 }
+
+.floral {
+  // width: 100%; // Ta div prend toute la colonne
+
+  iframe {
+    // width: 100% !important;
+    // min-width: 100%;
+    // display: block; // Enlève les espaces résiduels sous l'iframe
+    margin-bottom: 100px;
+  }
+}

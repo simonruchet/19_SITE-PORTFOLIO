@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MOLENSTRAAT STORM | VEG4</title>
+    <meta
+      name="description"
+      content="A collaborative short film where I handled on-set sound recording, sound design, and original music to create the movie's unique atmosphere."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="scss/main.scss" />
+  </head>
+  <body>
+    <extends
+      src="header.html"
+      locals='{"experienceClass":"", "projectsClass":"is-active", "aboutClass":"", "contactClass":""}'
+    ></extends>
+
+    <div class="detail-video">
+      <extends
+        src="detail-title.html"
+        locals='{
+          "cat":"I handled the full production for this project, from filming and color grading to the original score and sound design, to build a distinct brand identity for Molenstraat.", 
+          "title":"FATBIKE STORM"
+        }'
+      ></extends>
+    </div>
+
+    <div class="detail-video-1">
+      <extends src="button-back-to-projects.html"></extends>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-10 offset-2">
+            <div class="ratio ratio-16x9">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/-f3JlnYfAq8?si=mSq-arf7OIdVwdqS"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-5 offset-7">
+            <div class="detail-infos">
+              .March 2025 <br />
+              .Commercial
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <extends src="footer.html"></extends>
+    </div>
+
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
