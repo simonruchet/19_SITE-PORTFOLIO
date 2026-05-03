@@ -53,9 +53,11 @@
     justify-content: center;
     width: 100%;
     margin-top: 30px;
+    transition: background-color 0.3s ease;
   }
 
   button:hover {
     background-color: #001cab;
+    cursor: pointer;
   }
 }
