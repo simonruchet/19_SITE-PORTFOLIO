@@ -17,38 +17,90 @@
 //   .index-header-text {
 //     position: relative;
 //   }
-// }
+// }// --- Styles du Header VEG4 ---
 
 .index-header {
   position: relative;
   color: white;
   height: 100vh;
   overflow: hidden;
+
+  // Calque de la vidéo de fond
+  .index-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 0% 70%;
+    }
+  }
+
+  // Calque du menu / texte
+  .index-header-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  // Bouton flèche avec fond noir circulaire
+  .index-header-arrow {
+    position: absolute;
+    bottom: 70px; // Distance du bas de l'écran
+    left: 50%;
+    z-index: 2;
+
+    // Dimensions du cercle noir
+    width: 100px;
+    height: 100px;
+    background-color: black;
+
+    // Centrage de l'image (SVG) à l'intérieur du cercle
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // Combinaison du centrage horizontal et de l'animation
+    transform: translateX(-50%) scale(1);
+    animation: pulseScale 1.5s infinite ease-in-out;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #001cab; // Légère variation au survol
+    }
+
+    img {
+      width: 50px; // Taille de la flèche dans le cercle
+      height: auto;
+      display: block;
+    }
+  }
 }
 
-.index-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+// --- Animation de Scale (Pulse) ---
 
-.index-video video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 0% 70%;
-}
-
-.index-header-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+@keyframes pulseScale {
+  0% {
+    // On doit répéter le translateX(-50%) pour garder le centrage
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.15); // Grossissement de 15%
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
 }

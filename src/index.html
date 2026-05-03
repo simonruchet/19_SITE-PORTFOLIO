@@ -13,6 +13,7 @@
   </head>
   <body>
     <div class="index">
+      <!-- HEADER SECTION -->
       <div class="index-header">
         <div class="index-video">
           <video autoplay loop muted playsinline>
@@ -26,28 +27,17 @@
             locals='{"experienceClass":"is-active", "projectsClass":"", "aboutClass":"", "contactClass":""}'
           ></extends>
         </div>
-      </div>
-      <!-- <div class="project-photo">
-        <extends
-          src="project-photo.html"
-          locals='{"cat":"Photo", "link":"detail-photo-1.html", "title":"Ailleurs",  "img":"photo/ailleurs/ailleurs-minia.jpg"}'
-        ></extends>
-      </div>
-      <div class="project-music">
-        <extends
-          src="project-music.html"
-          locals='{"cat":"Son / Musique", "link":"detail-music-1.html", "title":"Orion",  "img":"son/cover-portfolio-1.jpg"}'
-        ></extends>
-      </div>
-      <div class="project-video">
-        <extends
-          src="project-video.html"
-          locals='{"cat":"Vidéo", "link":"detail-video-1.html", "title":"CLIP",  "img":"video/tuerie-minia.png"}'
-        ></extends>
-      </div> -->
 
-      <!-- sous le soleil -->
+        <!-- Bouton de scroll identifié pour ton main.js -->
+        <div id="scroll-button" class="index-header-arrow">
+          <img src="img/SVG/arrow-share-white-homepage.svg" alt="flèche" />
+        </div>
+      </div>
+      <!-- Fermeture cruciale du header ici -->
 
+      <!-- CONTENU SOUS LE HEADER -->
+
+      <!-- Section Sous le soleil -->
       <div class="experience experience-souslesoleil">
         <div class="experience-music">
           <extends
@@ -62,13 +52,12 @@
           <extends
             src="experience-music-credits-noclip.html"
             locals='{
-            "credits":"Production, Synthesizers, Vocals, Recording, Mix & Mastering"}'
+            "credits":"Production, Sound Design, Vocals, Recording, Mixing and Mastering"}'
           ></extends>
         </div>
       </div>
 
-      <!-- k flint -->
-
+      <!-- Section K Flint -->
       <div class="experience">
         <div class="experience-music">
           <extends
@@ -83,8 +72,8 @@
           <extends
             src="experience-music-credits.html"
             locals='{
-            "credits":"Production, Sound Design, Guitar, Vocals, Recording, Mix & Mastering",
-            "linkText":"Clip",
+            "credits":"Production, Sound Design, Guitar, Vocals, Recording, Mixing and Mastering",
+            "linkText":"Music Video",
             "linkUrl":"https://www.youtube.com/watch?v=qGoeESLl0-s",
             "linkUrlMedia":"",
             "sharecredits":"BY VEG4"
@@ -93,8 +82,7 @@
         </div>
       </div>
 
-      <!-- hiver a lndn -->
-
+      <!-- Section Hiver à Lndn -->
       <div class="experience">
         <div class="experience-music">
           <extends
@@ -109,8 +97,8 @@
           <extends
             src="experience-music-credits.html"
             locals='{
-            "credits":"Production, Vocals (Chorus & Verse 2), Recording",
-            "linkText":"CLIP",
+            "credits":"Production, Vocals, Recording",
+            "linkText":"Music Video",
             "linkUrl":"https://www.youtube.com/watch?v=ZMa8hJTtPOo",
             "linkUrlMedia":"https://www.instagram.com/j4ed.gz/",
             "sharecredits":"BY @J4ED.GZ"
@@ -124,6 +112,7 @@
       </div>
     </div>
 
+    <!-- Tes scripts en fin de body -->
     <script src="js/main.js" type="module"></script>
     <script src="js/experience-music.js"></script>
   </body>
