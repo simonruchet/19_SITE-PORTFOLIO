@@ -16,8 +16,19 @@
       <!-- HEADER SECTION -->
       <div class="index-header">
         <div class="index-video">
-          <video autoplay loop muted playsinline>
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            poster="img/homepage/photo-homepage.webp"
+          >
+            <!-- Le navigateur essaie d'abord le fichier le plus léger -->
+            <source src="img/homepage/visage-home.webm" type="video/webm" />
+
+            <!-- Si WebM n'est pas supporté, il prend le MP4 -->
             <source src="img/homepage/visage-home.mp4" type="video/mp4" />
+
             Votre navigateur ne supporte pas les vidéos.
           </video>
         </div>
