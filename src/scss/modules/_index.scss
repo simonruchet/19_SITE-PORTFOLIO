@@ -65,7 +65,7 @@
     // Dimensions du cercle noir
     width: 100px;
     height: 100px;
-    background-color: black;
+    background-color: #001cab;
 
     // Centrage de l'image (SVG) à l'intérieur du cercle
     display: flex;
@@ -79,7 +79,7 @@
     transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: #001cab; // Légère variation au survol
+      background-color: #000000; // Légère variation au survol
     }
 
     img {
